@@ -11,7 +11,25 @@
 
 function calcular(num1, num2, operador) {
   // TODO: implementar função
+
+  let calculo = num1 + parseFloat(operador) + num2
+
+  if (num1 == "" && num2 == "") {
+    return "parametros invalidos"
+  }
+  else if (operador == "/" && num1 || num2 == 0) {
+    return "erro divisão por zero"
+  }
+  else if (operador == "" || operador == parseInt) {
+    return "Operação invalida"
+  }
+  else {
+    return calculo
+  }
+
 }
+
+calcular(12, 13,)
 
 
 //NÃO REMOVA O CÓDIGO ABAIXO

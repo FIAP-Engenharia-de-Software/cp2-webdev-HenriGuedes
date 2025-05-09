@@ -9,6 +9,17 @@
 
 function adivinharNumero(max, palpite) {
   // TODO: implementar função
+  let numeroAleatorio = parseInt(Math.random(max)) * 11
+  if (palpite == numeroAleatorio) {
+    return "Acertou!"
+  }
+  else {
+    return "Errou! Tente novamente!"
+  }
+
+
+
+
 }
 
 
